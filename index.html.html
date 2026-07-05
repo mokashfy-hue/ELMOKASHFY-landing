@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشوار | وسيلة نقلك للميناء البري</title>
+    <!-- استدعاء خط عربي جميل من Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* الإعدادات الأساسية */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* تنسيق الأزرار (CTA) */
+        .cta-btn {
+            display: inline-block;
+            background-color: #ff6b6b;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: background 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .cta-btn:hover {
+            background-color: #e25555;
+        }
+
+        /* قسم البطل (Hero Section) */
+        .hero {
+            background: linear-gradient(135deg, #1a2a6c, #11998e);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+
+        .hero h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            opacity: 0.9;
+        }
+
+        /* قسم: لي "مشوار"؟ */
+        .why-us {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #ffffff;
+        }
+
+        .why-us h2 {
+            font-size: 2.5rem;
+            color: #1a2a6c;
+            margin-bottom: 20px;
+        }
+
+        .why-us p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #555;
+        }
+
+        /* قسم: كيف تعمل؟ */
+        .how-it-works {
+            padding: 80px 20px;
+            background-color: #f1f3f5;
+            text-align: center;
+        }
+
+        .how-it-works h2 {
+            font-size: 2.5rem;
+            color: #1a2a6c;
+            margin-bottom: 40px;
+        }
+
+        .steps-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .step-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 230px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .step-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .step-number {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .step-card h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .step-card p {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        /* قسم: الإطلاق التجريبي */
+        .beta-launch {
+            padding: 80px 20px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .beta-launch h2 {
+            font-size: 2.2rem;
+            color: #1a2a6c;
+            margin-bottom: 20px;
+        }
+
+        .beta-launch p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 20px auto;
+            color: #555;
+        }
+
+        .beta-notice {
+            display: inline-block;
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            border: 1px solid #ffeeba;
+        }
+
+        /* الفوتر (تذييل الصفحة) */
+        footer {
+            background-color: #1a2a6c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* التجاوب مع الشاشات الصغيرة */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 3rem; }
+            .hero h2 { font-size: 1.4rem; }
+            .step-card { width: 100%; max-width: 300px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>مشوار</h1>
+        <h2>ما تشيل هم المواصلات القبل صلاة الصبح للميناء البري.</h2>
+        <p>احجز مسبقاً، وحتجيك وسيلة نقل جمب بيتك وتوصّلك لحدي الميناء قبل موعد قيام الباص.</p>
+        <a href="#beta-section" class="cta-btn">احجز مكانك في أول تجربة</a>
+    </header>
+
+    <!-- لي "مشوار"؟ -->
+    <section class="why-us">
+        <h2>لي "مشوار"؟</h2>
+        <p>كتير من المسافرين قاعدين يعانوا من نفس المشكلة: <strong>مافي مواصلات توديك الميناء قبل صلاة الصبح.</strong><br><br>
+        مشوار صُممت عشان تديك بداية رحلة أكثر راحة واطمئنان، بدون أي ضغوطات في بداية يوم سفرك.</p>
+    </section>
+
+    <!-- كيف تعمل؟ -->
+    <section class="how-it-works">
+        <h2>كيف تعمل؟</h2>
+        <div class="steps-container">
+            <!-- خطوة 1 -->
+            <div class="step-card">
+                <div class="step-number">1️⃣</div>
+                <h3>احجز مسبقاً</h3>
+                <p>ورينا موعد سفرك وموقعك بكل سهولة.</p>
+            </div>
+            <!-- خطوة 2 -->
+            <div class="step-card">
+                <div class="step-number">2️⃣</div>
+                <h3>بنأكّد معاك الرحلة</h3>
+                <p>حنتواصل معاك قبل موعد السفر لتأكيد التفاصيل.</p>
+            </div>
+            <!-- خطوة 3 -->
+            <div class="step-card">
+                <div class="step-number">3️⃣</div>
+                <h3>لحدي باب بيتك</h3>
+                <p>بنوصلك لحدي قدام باب بيتك في الوقت المحدد.</p>
+            </div>
+            <!-- خطوة 4 -->
+            <div class="step-card">
+                <div class="step-number">4️⃣</div>
+                <h3>للميناء البري</h3>
+                <p>بنوصلك للميناء البري قبل موعد انطلاق الباص بأمان.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- مرحلة الإطلاق التجريبي -->
+    <section id="beta-section" class="beta-launch">
+        <h2>نحن الآن في مرحلة الإطلاق التجريبي</h2>
+        <p>شغالين حالياً على اختبار الخدمة مع عدد محدود من المسافرين عشان نحسّن التجربة قبل الإطلاق الرسمي. لو داير تكون من أوائل المستخدمين، أملأ النموذج وحنتواصل معاك لمن نبدأ التشغيل.</p>
+        
+        <div class="beta-notice">
+            🚀 التسجيل مفتوح لأول 100 مسافر لتجربة الخدمة قبل الإطلاق الرسمي.
+        </div>
+        <br>
+        <a href="#" class="cta-btn">كن من أوائل المستخدمين</a>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <p>جميع الحقوق محفوظة © مشوار 2026</p>
+    </footer>
+
+</body>
+</html>
